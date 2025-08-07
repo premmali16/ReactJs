@@ -1,0 +1,15 @@
+.footerquiz {
+  
+
+    padding:10px opx;
+      background: rgba(35, 41, 70, 0.9); 
+
+    border-radius:28px 28px 0px 0px;
+    border-top: 2.5px solid #AEE6F6;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #FFF;
+    position:relative;
+    bottom: 0;
+    width: 100%;
+}

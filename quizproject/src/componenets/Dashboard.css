@@ -1,0 +1,59 @@
+/* .dashboard {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc 0%, #f7e1ff 100%);
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 0 32px 0;
+}
+
+.dashboard-section {
+  width: 100%;
+  max-width: 900px;
+  margin: 32px auto;
+  background: rgba(255,255,255,0.85);
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(164, 80, 139, 0.08);
+  padding: 40px 32px 32px 32px;
+  text-align: center;
+  animation: fadeInSection 0.7s cubic-bezier(.39,.575,.565,1) both;
+}
+
+.dashboard-section h2 {
+  font-size: 2rem;
+  color: #a4508b;
+  margin-bottom: 18px;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.about-section {
+  background: linear-gradient(90deg, #f7e1ff 0%, #f8fafc 100%);
+}
+
+.testimonial-section {
+  background: linear-gradient(90deg, #f8fafc 0%, #f7e1ff 100%);
+}
+
+@keyframes fadeInSection {
+  0% { opacity: 0; transform: translateY(40px);}
+  100% { opacity: 1; transform: translateY(0);}
+}
+
+@media (max-width: 700px) {
+  .dashboard-section {
+    padding: 18px 6px 16px 6px;
+    margin: 18px 0;
+  }
+  .dashboard-section h2 {
+    font-size: 1.2rem;
+  }
+} */
