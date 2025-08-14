@@ -1,0 +1,32 @@
+.mainpage{
+    margin: 8px;
+    display: flex;
+    overflow-y: auto;   
+    background-color: #303662;
+}
+.sidebar{
+    width: 25%;
+  
+}
+.data-search{
+    width: 75%;
+    background-color: #232946;
+    border-radius: 12px;
+}
+
+/* Responsive layout */
+@media (max-width: 1024px) {
+  .sidebar { width: 35%; }
+  .data-search { width: 65%; }
+}
+
+@media (max-width: 768px) {
+  .mainpage {
+    flex-direction: column;
+    height: auto;
+  }
+  .sidebar,
+  .data-search {
+    width: 100%;
+  }
+}

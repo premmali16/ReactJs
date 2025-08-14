@@ -1,0 +1,122 @@
+
+ .sidebar-container {
+  /* width: 250px; */
+  background: #232946;
+  color: #fff;
+  margin-right: 2px;
+  height:96vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  gap: 20px;
+}
+
+.sidebar-header {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.sidebar-logo {
+      width: 80px;
+    margin-bottom: 10px;
+    filter: brightness(100) invert(0);
+}
+
+
+.sidebar-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.filter-section,
+.sort-section {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.filter-section h3,
+.sort-section h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.filter-options,
+.sort-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 8px;
+  accent-color: #eebbc3;
+}
+
+.sidebar-container::-webkit-scrollbar {
+  width: 6px;
+}
+.sort-options input{
+  padding: 5px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: #ffffff2e;
+    color: #fff;
+}
+.sort-options input::placeholder{
+  color: #fff;
+}
+.sidebar-container::-webkit-scrollbar-thumb {
+  background: #eebbc3;
+  border-radius: 3px;
+}
+@media (min-width: 769px){
+
+  .sidebar-header .cross-icon {
+    display: none;
+  }
+}
+
+/* Responsive: stack sections nicely */
+@media (max-width: 768px) {
+  .sidebar-header {
+    position: relative;
+  }
+  .sidebar-header .cross-icon{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 20px;
+    width: 20px;
+  }
+  .sidebar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  height: 100vh !important;
+  width: 350px;
+  max-width: 100%;
+  height: auto;
+  overflow-y: scroll;
+  transform: translate(0%);
+  transition: all 0.4s ease-in-out;
+  }
+    .sidebar-container.active {
+      transform: translate(-100%);
+    }
+  .sidebar-logo { width: 64px; }
+  .sidebar-title { font-size: 1.2rem; }
+}

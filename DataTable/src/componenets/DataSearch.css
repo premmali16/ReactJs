@@ -1,0 +1,135 @@
+/* General App Container */
+.app {
+  background-color: #232946; /* match sidebar bg */
+  color: #ffffff; /* light text on dark bg */
+  min-height: 96vh;
+  padding: 8px 8px 0 8px;
+  margin: 2px;
+  border-radius: 8px;
+  /* height: 99%; */
+}
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #eebbc3; /* accent from sidebar */
+}
+
+
+.header input {
+  padding: 8px 12px;
+  background: #1d2140;
+  color: #ffffff;
+  border: 1px solid #3a3f6b;
+  border-radius: 6px;
+}
+
+.header input::placeholder {
+  color: #9aa0c3;
+}
+
+
+
+/* Table Styling */
+.tabledata{
+  overflow: auto; 
+  max-height: 70vh;
+   margin:8px 30px;
+   border-bottom: 5px solid #232946;
+  margin-bottom: 90px;
+
+
+}
+table {
+  
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  /* position: relative; */
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #3a3f6b;
+  color: #ffffff;
+}
+
+/* Table Head */
+thead {
+  background-color: #1b1f3a;
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #2a2f55;
+}
+
+tbody tr:hover {
+  background-color: #303662;
+}
+.header-title {
+  width: 100%;
+    justify-content: flex-end;
+
+}
+.logo-contain{
+  justify-content: space-between;
+  width: 100%;
+  /* display: none; */
+}
+.logo-contain,
+   .header-title {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+
+    
+    gap: 20px;
+  }
+/* Responsive: compact header and table */
+@media (max-width: 1024px) {
+  .tabledata { max-height: 65vh; margin: 8px 16px; }
+}
+@media (min-width: 769px){
+  .header svg{
+    display: none;
+    
+  }
+}
+@media (max-width: 768px) {
+   .header svg{
+    margin-left: 10px;
+    height: 20px;
+    width: 20px;
+   }
+   .logo-contain{
+    width: 100%;
+   }
+   .header-title {
+  justify-content: space-between;
+}
+  .logo-contain .sidebar-logo{
+    
+    margin-bottom: 0;
+  }
+  .header { flex-direction: column; gap: 8px; align-items: flex-start; }
+  .tabledata { max-height: none; margin: 8px 12px; margin-bottom: 24px; }
+  th:nth-child(3), td:nth-child(3), /* Email */
+  th:nth-child(4), td:nth-child(4)  /* City */ { display: none; }
+}
+
+
+
+
+

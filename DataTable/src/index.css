@@ -1,0 +1,32 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+font-family: sans-serif;
+  
+}
+body{
+  /* background-color: rgb(64, 63, 63)        ; */
+  background-color: #303662;
+}
+/* Firefox */
+* {
+  scrollbar-width: thin;               /* auto | thin | none */
+  scrollbar-color: #9aa4b2 transparent;/* thumb | track */
+}
+
+/* Chrome / Edge / Safari */
+*::-webkit-scrollbar {
+  width: 6px;   /* vertical */
+  height: 6px;  /* horizontal */
+}
+*::-webkit-scrollbar-thumb {
+  background: #9aa4b2;
+  border-radius: 999px;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: #7c8796;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
