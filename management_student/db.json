@@ -1,0 +1,28 @@
+{
+  "students": [
+    {
+      "id": "6591",
+      "name": "raj",
+      "roll": "12",
+      "class": "10th"
+    },
+    {
+      "id": "ce6c",
+      "name": "prem",
+      "roll": "12",
+      "class": "11th"
+    },
+    {
+      "id": "724b",
+      "name": "raj",
+      "roll": "12",
+      "class": "12th"
+    },
+    {
+      "id": "ecac",
+      "name": "prem",
+      "roll": "1",
+      "class": "10th"
+    }
+  ]
+}
